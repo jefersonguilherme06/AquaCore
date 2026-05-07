@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | AquaCore</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container-header">
+        <h1>
+            <a href="index.html">
+                <img src="https://uploads.onecompiler.io/44ew6vu54/44hhyqkat/cggfcfg.png" alt="Logo da AquaCore">
+            </a>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html">Produtos</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="container">
+            <span class="badge">Suporte & Vendas</span>
+            <h2>Conecte-se ao Núcleo</h2>
+            <p>Seja para suporte técnico ou implementação industrial, nossa equipe está pronta para integrar sua infraestrutura.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-grid">
+            
+            <div class="contact-info">
+                <div class="info-card card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Sede Global</h4>
+                    <p>Av. da Inovação, 2026 - Tech District<br>São Paulo, SP - Brasil</p>
+                </div>
+
+                <div class="info-card card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Central de Comando</h4>
+                    <p>0800 591 0000<br>Seg - Sex, 08:00 - 18:00</p>
+                </div>
+
+                <div class="info-card card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>E-mail</h4>
+                    <p>contact@aquacore.tech<br>support@aquacore.tech</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container card">
+                <h3>Requisição de Contato</h3>
+                <form id="formContato">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Ex: Lucas Freitas" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" placeholder="nome@empresa.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto">
+                            <option value="vendas">Implementação de Projeto</option>
+                            <option value="suporte">Suporte AquaCore Sense</option>
+                            <option value="parceria">Parceria Estratégica</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" placeholder="Descreva sua necessidade hídrica..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Transmitir Dados <i class="fas fa-broadcast-tower"></i>
+                    </button>
+                </form>
+                <div id="resposta"></div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 AquaCore. Engenharia Resiliente para um Futuro Sustentável.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
